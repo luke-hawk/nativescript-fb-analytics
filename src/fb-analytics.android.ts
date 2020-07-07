@@ -1,5 +1,27 @@
-import { Common } from './fb-analytics.common';
+import * as application from "tns-core-modules/application";
 
-export class FbAnalytics extends Common {
+let androidApplication;
+let appEventsLogger;
+export function initAnalytics() {
+    androidApplication = application.android;
+    com.facebook.FacebookSdk.sdkInitialize(androidApplication.context.getApplicationContext())
+    appEventsLogger = com.facebook.appevents.AppEventsLogger.newLogger(androidApplication.context.getApplicationContext());
+}
 
+export function logEvent(name: string, parameters?: any) {
+    if (name === undefined) {
+        throw ("Argument 'name' is missing");
+    }
+
+    const bundle = new android.os.Bundle();
+
+    if (parameters !== undefined) {
+        for (let p in parameters) {
+            let param = parameters[p];
+            if (param.value !== undefined) {
+                bundle.putString(param.key, param.value);
+            }
+        }
+    }
+    appEventsLogger.logEvent(name, bundle);
 }

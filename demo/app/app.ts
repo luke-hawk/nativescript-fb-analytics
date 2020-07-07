@@ -5,6 +5,11 @@ purpose of the file is to pass control to the app’s first module.
 */
 
 import * as app from "tns-core-modules/application";
+import * as fbAnalytics from 'nativescript-fb-analytics';
+
+app.on(app.launchEvent, function (args) {
+    fbAnalytics.initAnalytics();
+});
 
 app.run({ moduleName: "app-root" });
 
