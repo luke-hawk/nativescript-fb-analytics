@@ -1,7 +1,7 @@
 # Nativescript: Facebook Analytics
 Adds *only* Facebook Analytics to your Nativescript app *not* the full Facebook SDK. 
 
-This plugin is based on [nativescript-facebook](https://github.com/NativeScript/nativescript-facebook) but only includes the Facebook Core Library which is needed for analytics. This way it **reduces the bundle size by 85%** compared to nativescript-facebook which includes the full Facebook SDK. If you want to learn more you may read this [blog post](https://developers.facebook.com/blog/post/2017/09/26/android-sdk-optimization/).
+This plugin is based on [nativescript-facebook](https://github.com/NativeScript/nativescript-facebook) but only includes the Facebook Core Library which is needed for analytics. This way it **reduces the bundle size by 86%** compared to nativescript-facebook which includes the full Facebook SDK. If you want to learn more you may read this [blog post](https://developers.facebook.com/blog/post/2017/09/26/android-sdk-optimization/).
 
 ## Installation
 ```
