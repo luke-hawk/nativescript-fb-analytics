@@ -1,7 +1,7 @@
 {
 	"name": "nativescript-fb-analytics",
 	"version": "1.0.0",
-	"description": "Your awesome NativeScript plugin.",
+	"description": "Lightweight NativeScript plugin to add Facebook Analytics to iOS and Android apps",
 	"main": "fb-analytics",
 	"typings": "index.d.ts",
 	"nativescript": {
@@ -33,10 +33,7 @@
 		"Android",
 		"iOS"
 	],
-	"author": {
-		"name": "Your Name",
-		"email": "youremail@yourdomain.com"
-	},
+	"author": "Lucas Habrich",
 	"bugs": {
 		"url": "https://github.com/luke-hawk/nativescript-fb-analytics/issues"
 	},

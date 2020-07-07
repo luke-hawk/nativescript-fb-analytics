@@ -5,7 +5,7 @@ This plugin is based on [nativescript-facebook](https://github.com/NativeScript/
 
 ## Installation
 ```
-tns plugin add nativescript-facebook
+tns plugin add nativescript-fb-analytics
 ```
 
 ## Configuration
