@@ -1,6 +1,5 @@
-import { Observable } from 'tns-core-modules/data/observable';
+import { Observable } from '@nativescript/core/data/observable';
 import * as fbAnalytics from 'nativescript-fb-analytics';
-import * as platform from "tns-core-modules/platform";
 
 export class HomeViewModel extends Observable {
 
@@ -9,7 +8,7 @@ export class HomeViewModel extends Observable {
   }
 
   public sendTestEvent() {
-    const eventString = `TestEventFrom${platform.device.os}`
+    const eventString = "Hello Facebook Analytics";
     fbAnalytics.logEvent(eventString);
   }
 }

@@ -4,14 +4,14 @@ You can use this file to perform app-level initialization, but the primary
 purpose of the file is to pass control to the app’s first module.
 */
 
-import * as app from "tns-core-modules/application";
+import { Application } from "@nativescript/core";
 import * as fbAnalytics from 'nativescript-fb-analytics';
 
-app.on(app.launchEvent, function (args) {
+Application.on(Application.launchEvent, function (args) {
     fbAnalytics.initAnalytics();
 });
 
-app.run({ moduleName: "app-root" });
+Application.run({ moduleName: "app-root" });
 
 /*
 Do not place any code after the application has been started as it will not
