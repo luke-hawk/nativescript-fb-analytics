@@ -1,5 +1,3 @@
-import * as application from "tns-core-modules/application";
-
 export function initAnalytics() {
     FBSDKAppEvents.activateApp();
 }

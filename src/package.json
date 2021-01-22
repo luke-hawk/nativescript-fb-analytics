@@ -1,6 +1,6 @@
 {
 	"name": "nativescript-fb-analytics",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Lightweight NativeScript plugin to add Facebook Analytics to iOS and Android apps",
 	"main": "fb-analytics",
 	"typings": "index.d.ts",
@@ -40,9 +40,9 @@
 	"license": "Apache-2.0",
 	"homepage": "https://github.com/luke-hawk/nativescript-fb-analytics",
 	"devDependencies": {
-		"tns-core-modules": "^6.0.0",
-		"tns-platform-declarations": "^6.0.0",
-		"typescript": "~3.4.5",
+		"@nativescript/core": "~7.0.0",
+		"@nativescript/types": "~7.0.0",
+		"typescript": "~3.9.0",
 		"prompt": "^1.0.0",
 		"rimraf": "^2.6.3",
 		"tslint": "^5.12.1",

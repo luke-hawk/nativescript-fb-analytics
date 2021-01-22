@@ -1,9 +1,9 @@
-import * as application from "tns-core-modules/application";
+import { Application } from '@nativescript/core';
 
 let androidApplication;
 let appEventsLogger;
 export function initAnalytics() {
-    androidApplication = application.android;
+    androidApplication = Application.android;
     com.facebook.FacebookSdk.sdkInitialize(androidApplication.context.getApplicationContext())
     appEventsLogger = com.facebook.appevents.AppEventsLogger.newLogger(androidApplication.context.getApplicationContext());
 }
