@@ -1,6 +1,6 @@
 {
 	"name": "nativescript-fb-analytics",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Lightweight NativeScript plugin to add Facebook Analytics to iOS and Android apps",
 	"main": "fb-analytics",
 	"typings": "index.d.ts",
